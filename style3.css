@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*===============================
+        START OF HEADER
+ =================================*/
+body{
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    align-items: center;
+    background-color: #e9e4f0 ;
+}
+
+#header-img{
+    width: 200px;
+    height: 160px;
+}
+
+/*=======================================
+            START OF NAV BAR
+ ========================================*/
+
+#nav-bar{
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    top:.8em;
+    right:.8em;
+    background-color: #e9e4f0;
+}
+
+a{
+    font-size: 1.8em;
+    text-decoration: none;
+    font-family: monospace;
+    color: slategrey;
+    transition: color .7s ease-out;
+    border-bottom: 2px solid dimgray;
+    margin: 1.5em;
+}
+
+i{
+    margin-right: .5em;
+}
+
+@media screen and (max-width: 900px){
+    #nav-bar{
+        flex-direction: column;
+    }
+    header{
+        justify-content: center;
+    }
+    .nav-link{
+        padding: .5em 1.5em;
+        margin: .5em;
+    }
+}
+
+
+/*=======================================
+            START OF NAV BAR
+ ========================================*/
+
+@media screen and (max-width: 500px){
+    #nav-bar{
+        flex-direction: column;
+    }
+    header{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav-link{
+        padding: .5em 1.5em;
+        margin: .5em;
+    }
+}
+
+a:hover{
+    color: deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+}
+
+/*===============================
+        END OF HEADER
+ =================================*/
+
+
+/*===============================
+        START OF HOME PAGE
+ =================================*/
+
+#main  {
+    display: flex;
+    justify-content: center;
+}
+
+/*===============================
+        START OF HOME PAGE
+ =================================*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 55%;
+    padding-top: 30px; height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%,0);
+}
+
+/*===============================
+        END OF HOME PAGE
+ =================================*/
+
+
+/*===============================
+      START OF ABOUT-ME PAGE
+ =================================*/
+
+#about-me{
+    display: flex;
+    margin: 8em;
+    margin-top:0;
+    justify-content: space-around;
+}
+#about-me-title-container{
+    display: flex;
+    justify-content: center;
+}
+#about-me-title{
+    font-size: 2em;
+    font-family: monospace;
+    color: deepskyblue;
+    border-bottom: .1em solid #61dafb;
+    text-align: center;
+}
+.about-me-p{
+    margin: 2em;
+    font-family: monospace;
+    font-size: 1.4em;
+}
+
+/*===============================
+      END OF ABOUT-ME PAGE
+ =================================*/
+
+
+/*===============================
+      START OF SUBSCRIBE
+ =================================*/
+
+#subscribe{
+    display: flex;
+    justify-content: center;
+}
+input[type=email]{
+    background-color:#808080;
+    border: none;
+    padding: .5em 1em;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size: 2em;
+}
+input[placeholder]{
+    color : deepskyblue;
+}
+input[type=submit]{
+    background-color: deepskyblue;
+    border: none;
+    color: #808080;
+    padding: .5em 1em;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+
+
+/*===============================
+      END OF SUBSCRIBE
+ =================================*/
+
+/*===============================
+        START OF FOOTER
+ =================================*/
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    font-size: .6em;
+    margin-bottom: 0;
+}
+
+/*===============================
+        END OF FOOTER
+ =================================*/
